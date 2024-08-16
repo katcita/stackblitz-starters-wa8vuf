@@ -1,0 +1,17 @@
+.button-container {
+  display: flex;
+  flex-direction: row; /* Pour empiler les boutons verticalement si nécessaire */
+}
+
+.button-container div {
+  flex-grow: 1;
+}
+#b1,
+#b2,
+#b3 {
+  width: 30%;
+}
+
+img {
+  width: 100%;
+}

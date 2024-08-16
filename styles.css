@@ -1,0 +1,100 @@
+h1 {
+  text-decoration: underline;
+}
+
+.deco {
+  color: green;
+  border: 20px solid red;
+  text-align: center;
+}
+
+.deco2r {
+  color: orange;
+  text-align: center;
+}
+
+.ch {
+  color: darkmagenta;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 100px;
+}
+.Ro {
+  color: brown;
+  text-align: center;
+  font-weight: 500;
+  font-size: 50;
+}
+.ma {
+  color: darkorange;
+  text-align: center;
+  font-family: cursive;
+  border: 3px red;
+  border-radius: 200px 0 200px 0;
+  border-style: dotted;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 15px 0 20px 0;
+}
+
+#Henriiv {
+  background-color: black;
+  color: cornsilk;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0 10px 0 10px;
+}
+
+#He {
+  text-align: center;
+  font-family: cursive;
+  border: 3px;
+  border-color: darkred;
+  border-style: double;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px 0 10px 0;
+}
+
+#ma {
+  background-color: darkmagenta;
+  color: chartreuse;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0 35px 0 35px;
+}
+#maimg {
+  border: 5px solid crimson;
+  border-radius: 3000px;
+  opacity: 0.8;
+}
+#mer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+#Heimg {
+  border: 5px solid;
+  border-color: crimson;
+  border-radius: 50px;
+}
+#Hep {
+  text-align: center;
+}
+
+.matext {
+  width: 80%;
+  margin: 15px;
+  border-radius: 4px;
+  padding: 18px;
+  font-size: 20px;
+}
+.Hetext {
+  width: 90%;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+}

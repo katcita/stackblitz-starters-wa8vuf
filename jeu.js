@@ -35,6 +35,11 @@ function rejouer(){
   location.reload();
 }
 
+function stopMusique(){
+  const g = document.getElementById("myAudio")
+  g.pause()
+}
+
 function obtenirNombreAleatoire() {
   // Génère un nombre décimal aléatoire entre 0 et 2.999...
   let nombreAleatoire = Math.random() * 3;

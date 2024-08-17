@@ -3,7 +3,7 @@ const winNum = obtenirNombreAleatoire()
 function show1() {
   const b1 = document.getElementById('b1');
   if(winNum===1){
-    b1.innerHTML = '<img src="gagner.png" alt="">';   
+    b1.innerHTML = '<img src="L14.png" alt="">';   
   } else{
     b1.innerHTML = '<img src="perdu.png" alt="">';
   }
@@ -13,7 +13,7 @@ function show1() {
 function show2() {
   const b2 = document.getElementById('b2');
   if(winNum===2){
-    b2.innerHTML = '<img src="gagner.png" alt="">';   
+    b2.innerHTML = '<img src="L14.png" alt="">';   
   } else{
     b2.innerHTML = '<img src="perdu.png" alt="">';
   }
@@ -24,7 +24,7 @@ function show3() {
   const b3 = document.getElementById("b3");
   if(winNum===3){
 
-    b3.innerHTML = '<img src="gagner.png" alt="">'
+    b3.innerHTML = '<img src="L14.png" alt="">'
   } else{
 
   b3.innerHTML = '<img src="perdu.png" alt="">'

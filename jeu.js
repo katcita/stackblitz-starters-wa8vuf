@@ -1,11 +1,22 @@
 const winNum = obtenirNombreAleatoire()
-
+let score = parseInt( localStorage.getItem("score"))
+let dejaGagne = false
+document.getElementById("score").innerHTML=score
 function show1() {
   const b1 = document.getElementById('b1');
   if(winNum===1){
-    b1.innerHTML = '<img src="L14.png" alt="">';   
+    if(!dejaGagne){
+      score=score+1
+      document.getElementById("score").innerHTML=score
+      localStorage.setItem("score",score)
+      dejaGagne = true
+      b1.innerHTML = '<img src="L14.png" alt="">';   
+    
+    }
   } else{
     b1.innerHTML = '<img src="perdu.png" alt="">';
+    
+    attendreDeuxSecondes(rejouer)
   }
  
 }
@@ -13,9 +24,19 @@ function show1() {
 function show2() {
   const b2 = document.getElementById('b2');
   if(winNum===2){
-    b2.innerHTML = '<img src="L14.png" alt="">';   
+    if(!dejaGagne){
+
+    
+    score=score+1
+    document.getElementById("score").innerHTML=score
+    localStorage.setItem("score",score)
+    dejaGagne = true
+    b2.innerHTML = '<img src="L14.png" alt="">';  
+    } 
   } else{
     b2.innerHTML = '<img src="perdu.png" alt="">';
+    
+    attendreDeuxSecondes(rejouer)
   }
  
 }
@@ -23,11 +44,19 @@ function show2() {
 function show3() {
   const b3 = document.getElementById("b3");
   if(winNum===3){
+    if(!dejaGagne){
 
+    
+    score=score+1
+    document.getElementById("score").innerHTML=score
+    localStorage.setItem("score",score)
+    
+dejaGagne = true
     b3.innerHTML = '<img src="L14.png" alt="">'
-  } else{
+ } } else{
 
   b3.innerHTML = '<img src="perdu.png" alt="">'
+  attendreDeuxSecondes(rejouer)
   }
 }
 
@@ -49,4 +78,8 @@ function obtenirNombreAleatoire() {
 
   // Ajoute 1 pour obtenir un nombre entre 1 et 3
   return nombreAleatoire + 1;
+}
+
+function attendreDeuxSecondes(fonctionAExecuter) {
+  setTimeout(fonctionAExecuter, 1000); // 2000 millisecondes = 2 secondes
 }

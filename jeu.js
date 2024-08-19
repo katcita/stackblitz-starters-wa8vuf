@@ -1,6 +1,9 @@
 const winNum = obtenirNombreAleatoire()
 let score = parseInt( localStorage.getItem("score"))
 let dejaGagne = false
+if(!score){
+  localStorage.setItem("score",0)
+}
 document.getElementById("score").innerHTML=score||0
 function show1() {
   const b1 = document.getElementById('b1');

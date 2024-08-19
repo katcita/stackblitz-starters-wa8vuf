@@ -1,7 +1,7 @@
 const winNum = obtenirNombreAleatoire()
 let score = parseInt( localStorage.getItem("score"))
 let dejaGagne = false
-document.getElementById("score").innerHTML=score
+document.getElementById("score").innerHTML=score||0
 function show1() {
   const b1 = document.getElementById('b1');
   if(winNum===1){

@@ -28,6 +28,9 @@ img {
 #title{
   font-size: 25px;
 }
+#mute{
+  width: 25px;
+}
 
 /* mobile.css */
 @media (max-width: 768px) {
@@ -35,6 +38,9 @@ img {
     width: 100%;
     font-size:45px;
     margin-bottom: 10px;
+  }
+  #mute{
+    width: 45px;
   }
   
 }

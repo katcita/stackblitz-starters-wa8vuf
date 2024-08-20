@@ -20,9 +20,8 @@ function show1() {
   } else{
     b1.innerHTML = '<img src="perdu.png" alt="">';
     
-    attendreDeuxSecondes(rejouer)
   }
- 
+  attendreDeuxSecondes(rejouer)
 }
 
 function show2() {
@@ -40,9 +39,10 @@ function show2() {
   } else{
     b2.innerHTML = '<img src="perdu.png" alt="">';
     
-    attendreDeuxSecondes(rejouer)
-  }
- 
+   }
+   attendreDeuxSecondes(rejouer)
+  
+
 }
 
 function show3() {
@@ -60,8 +60,9 @@ dejaGagne = true
  } } else{
 
   b3.innerHTML = '<img src="perdu.png" alt="">'
-  attendreDeuxSecondes(rejouer)
   }
+  attendreDeuxSecondes(rejouer)
+  
 }
 
 function rejouer(){

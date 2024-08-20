@@ -9,7 +9,8 @@
     <p id="title">Devinez ou est Louis XIV.
     
    <img id="coin" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Gold_coin_icon.png" alt="">
-   <span id="score"></span>
+   <span id="score"></span> | 
+   <span id="joueur"></span>
 
     </p>
 
@@ -38,6 +39,8 @@
       <button id="sm"onclick="stopMusique()">
         <img id="mute" src="/mute.png" alt="">
         Stop musique</button>
+        <input id="nom" type="text" placeholder="votre nom s'il vous plait" >
+        <button id="sn" onclick="sn()">sauver nom</button>
     </div>
     <audio id="myAudio" src="La_Marseillaise.ogg.ogx" autoplay loop></audio>
     <script src="jeu.js"></script>

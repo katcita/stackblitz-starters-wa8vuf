@@ -27,7 +27,7 @@ img {
 
 /* mobile.css */
 @media (max-width: 768px) {
-  #rj, #sm{
+  #rj, #sm, #sn,#nom{
     width: 100%;
     font-size:45px;
     margin-bottom: 10px;
@@ -38,7 +38,7 @@ img {
   
 }
 @media (min-width: 769px) {
-  #rj, #sm{
+  #rj, #sm, #sn,#nom{
     width: 100%;
     font-size: 24px;
     margin-bottom: 10px;

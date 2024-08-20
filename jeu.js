@@ -1,5 +1,9 @@
 const winNum = obtenirNombreAleatoire()
 let score = parseInt( localStorage.getItem("score"))
+let joueur= localStorage.getItem("joueur") || "anon"
+const j=document.getElementById("joueur")
+  j.innerHTML=joueur
+
 let dejaGagne = false
 if(!score){
   localStorage.setItem("score",0)
@@ -87,4 +91,12 @@ function obtenirNombreAleatoire() {
 
 function attendreDeuxSecondes(fonctionAExecuter) {
   setTimeout(fonctionAExecuter, 1000); // 2000 millisecondes = 2 secondes
+}
+
+function sn(){
+  const nom=document.getElementById("nom")
+  localStorage.setItem("joueur",nom.value)
+  const j=document.getElementById("joueur")
+  j.innerHTML=nom.value
+
 }

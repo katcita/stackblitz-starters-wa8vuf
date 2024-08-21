@@ -17,18 +17,21 @@
     <div class="button-container">
       <div id="b1" onclick="show1()">
         <img
+        id="carte1"
           src="/carte.png"
           alt=""
         />
       </div>
       <div id="b2" onclick="show2()">
         <img
+        id="carte2"
           src="/carte.png"
           alt=""
         />
       </div>
       <div id="b3" onclick="show3()">
         <img
+        id="carte3"
           src="/carte.png"
           alt=""
         />
@@ -42,6 +45,29 @@
         <input id="nom" type="text" placeholder="votre nom s'il vous plait" >
         <button id="sn" onclick="sn()">sauver nom</button>
     </div>
+
+    <h1 id="choisir">Choisir une nouvelle carte: </h1>
+    <div class="button-container">
+      <div id="c1" onclick="update1()">
+        <img
+          src="/carte1.jpg"
+          alt=""
+        />
+      </div>
+      <div id="c2" onclick="update2()">
+        <img
+          src="/carte2.jpg"
+          alt=""
+        />
+      </div>
+      <div id="c3" onclick="update3()">
+        <img
+          src="/carte3.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    
     <audio id="myAudio" src="La_Marseillaise.ogg.ogx" autoplay loop></audio>
     <script src="jeu.js"></script>
   </body>

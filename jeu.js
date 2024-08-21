@@ -100,3 +100,24 @@ function sn(){
   j.innerHTML=nom.value
 
 }
+
+function update1(){
+  const b1=document.getElementById("carte1")
+  b1.src="/carte1.jpg"
+  const b2=document.getElementById("carte2")
+  b2.src="/carte1.jpg"
+  const b3=document.getElementById("carte3")
+  b3.src="/carte1.jpg"
+
+
+}
+
+function update2(){
+  const b1 = document.getElementById("carte1")
+  b1.src="/carte2.jpg"
+  const b2=document.getElementById("carte2")
+  b2.src="/carte2.jpg"
+  const b3=document.getElementById("carte3")
+  b3.src="/carte2.jpg"
+
+}

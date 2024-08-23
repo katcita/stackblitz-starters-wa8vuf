@@ -121,3 +121,13 @@ function update2(){
   b3.src="/carte2.jpg"
 
 }
+
+function update3(){
+  const b1 = document.getElementById("carte1")
+b1.src = "/carte3.jpg"
+const b2 = document.getElementById("carte2")
+b2.src = "/carte3.jpg"
+const b3 = document.getElementById("carte3")
+b3.src = "/carte3.jpg"
+
+}

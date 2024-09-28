@@ -1,0 +1,33 @@
+.aaa {
+    border-radius: 1000px;
+    background-color: royalblue;
+}
+.iii{
+
+    color: violet;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+#gr{
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(33deg,#DD4500,#ADCB12);  
+}
+
+#pc{
+    background: linear-gradient(95deg,#EE23D5,#EE342A);
+    height:3000px;
+    width:50%;
+    border-radius:2000px;
+}
+
+#rrr{
+    background: linear-gradient(100deg,#DDee33,#A435);
+    height: 3333px;
+    width: 75%;
+    border-radius: 3333px;
+}

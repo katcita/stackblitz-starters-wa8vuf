@@ -4,6 +4,7 @@ let joueur= localStorage.getItem("joueur") || "anon"
 const j=document.getElementById("joueur")
   j.innerHTML=joueur
 
+
 let dejaGagne = false
 if(!score){
   localStorage.setItem("score",0)
@@ -102,32 +103,56 @@ function sn(){
 }
 
 function update1(){
+  let sc = localStorage.getItem("score")
+  let verifierCarte = localStorage.getItem("carte1")
+  if(sc>=5 || verifierCarte){ 
   const b1=document.getElementById("carte1")
   b1.src="/carte1.jpg"
   const b2=document.getElementById("carte2")
   b2.src="/carte1.jpg"
   const b3=document.getElementById("carte3")
   b3.src="/carte1.jpg"
-
+  if(!verifierCarte){
+    localStorage.setItem("score", sc-5)
+    const score=document.getElementById("score")
+    score.innerHTML = sc-5
+    localStorage.setItem("carte1",true)
+  }
+  
+  localStorage.setItem("carteActuelle", "carte1")
+}
 
 }
 
 function update2(){
+  const sc = localStorage.getItem("score")
+  if(sc>=4){
   const b1 = document.getElementById("carte1")
   b1.src="/carte2.jpg"
   const b2=document.getElementById("carte2")
   b2.src="/carte2.jpg"
   const b3=document.getElementById("carte3")
   b3.src="/carte2.jpg"
+  localStorage.setItem("score",sc-4)
+  const score=document.getElementById("score")
+  score.innerHTML=sc-4
 
+}
 }
 
 function update3(){
+  const sc = localStorage.getItem("score")
+  if(sc>=6){
+ 
   const b1 = document.getElementById("carte1")
 b1.src = "/carte3.jpg"
 const b2 = document.getElementById("carte2")
 b2.src = "/carte3.jpg"
 const b3 = document.getElementById("carte3")
 b3.src = "/carte3.jpg"
+localStorage.setItem("score",sc-6)
+  const score=document.getElementById("score")
+  score.innerHTML=sc-6
 
+  }
 }
